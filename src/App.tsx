@@ -1,11 +1,17 @@
-import React from "react";
+import Navigation from "./components/navigation/navigation";
+import { Outlet } from "react-router-dom";
 
-import "./App.css";
+// import { useEffect, useState } from "react";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Start</h1>
+    <div>
+      <header>
+        <Navigation />
+      </header>
+      <main className="main">
+        <Outlet />
+      </main>
     </div>
   );
 }
